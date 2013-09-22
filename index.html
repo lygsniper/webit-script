@@ -13,14 +13,14 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>webit-script by zqq90</title>
+    <title>Webit Script  by zqq90</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>webit-script</h1>
-        <h2>A template-like script and engine, all writen with Java.</h2>
+        <h1>Webit Script </h1>
+        <h2>A template-like script and engine, all writen with Java 5+.</h2>
         <a href="https://github.com/zqq90/webit-script" class="button"><small>View project on</small>GitHub</a>
       </div>
     </header>
@@ -29,11 +29,13 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1>
-<a name="webit-script" class="anchor" href="#webit-script"><span class="octicon octicon-link"></span></a>Webit Script</h1>
+<a name="webit-script----to-be-awesome" class="anchor" href="#webit-script----to-be-awesome"><span class="octicon octicon-link"></span></a>Webit Script -- to be awesome</h1>
 
-<p><strong>Webit Script</strong> is a template-like script and engine, all writen with Java.</p>
+<p>A template-like script and engine, all writen with Java <strong>(Java 5+)</strong>.</p>
 
 <p>It's grammar is very like Javascript, and with <code>&lt;% %&gt;</code> <code>${ }</code> like in JSP</p>
+
+<p><strong>Download: <a href="http://zqq90.github.io/maven/com/github/zqq90/webit-script/webit-script/1.1.0/webit-script-1.1.0.jar">Jar</a>    <a href="http://zqq90.github.io/maven/com/github/zqq90/webit-script/webit-script/1.1.0/webit-script-1.1.0-javadoc.jar">Javadoc</a>    <a href="http://zqq90.github.io/maven/com/github/zqq90/webit-script/webit-script/1.1.0/webit-script-1.1.0-sources.jar">Sources</a></strong></p>
 
 <h2>
 <a name="how-to-use%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8" class="anchor" href="#how-to-use%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8"><span class="octicon octicon-link"></span></a>How to use(如何使用)</h2>
@@ -53,7 +55,7 @@
         &lt;dependency&gt;
             &lt;groupId&gt;com.github.zqq90.webit-script&lt;/groupId&gt;
             &lt;artifactId&gt;webit-script&lt;/artifactId&gt;
-            &lt;version&gt;1.0.0&lt;/version&gt;
+            &lt;version&gt;1.1.0&lt;/version&gt;
         &lt;/dependency&gt;
         ...
     &lt;/dependencies&gt;
@@ -64,20 +66,27 @@
 
 <ul>
 <li><code>webit-script-[version].jar</code></li>
-<li><code>jodd-[version].jar</code></li>
+<li><code>jodd-core-[version].jar</code></li>
+<li><code>jodd-props-[version].jar</code></li>
 </ul><h3>
 <a name="or-jodd-inside-version" class="anchor" href="#or-jodd-inside-version"><span class="octicon octicon-link"></span></a>Or jodd-inside Version</h3>
 
-<ul>
-<li><code>webit-script-joddin-[version].jar</code></li>
-<li>*如果您不喜欢Jodd, 并且其他组件没使用到Jodd, 可以试试这个 *</li>
-</ul><h3>
-<a name="download-jar------javadoc---sources" class="anchor" href="#download-jar------javadoc---sources"><span class="octicon octicon-link"></span></a>Download: <a href="http://zqq90.github.io/maven/com/github/zqq90/webit-script/webit-script/1.0.0/webit-script-1.0.0.jar">Jar</a>      <a href="http://zqq90.github.io/maven/com/github/zqq90/webit-script/webit-script/1.0.0/webit-script-1.0.0-javadoc.jar">Javadoc</a>   <a href="http://zqq90.github.io/maven/com/github/zqq90/webit-script/webit-script/1.0.0/webit-script-1.0.0-sources.jar">Sources</a>
-</h3>
+<pre><code>    &lt;dependency&gt;
+        &lt;groupId&gt;com.github.zqq90.webit-script&lt;/groupId&gt;
+        &lt;artifactId&gt;webit-script-joddinside&lt;/artifactId&gt;
+        &lt;version&gt;1.1.0&lt;/version&gt;
+    &lt;/dependency&gt;
+</code></pre>
 
 <ul>
-<li><em>current version 1.0.0</em></li>
-<li>[webit-script-joddin-1.0.0.jar] [jar_joddin]</li>
+<li><code>webit-script-joddinside-[version].jar</code></li>
+<li><em>我们非常推荐您尝试一下Jodd, 但如果您真的不打算直接使用Jodd, 并且您的项目没直接使用或间接引用到Jodd, 可以试试这个</em></li>
+</ul><h3>
+<a name="about-release" class="anchor" href="#about-release"><span class="octicon octicon-link"></span></a>About Release</h3>
+
+<ul>
+<li><em>current version 1.1.0</em></li>
+<li><a href="http://zqq90.github.io/maven/com/github/zqq90/webit-script/webit-script-joddinside/1.1.0/webit-script-joddinside-1.1.0.jar">webit-script-joddinside-1.1.0.jar</a></li>
 <li>Jodd here: <a href="http://jodd.org/download/index.html">Download</a>   <a href="http://jodd.org/index.html">Site</a>   <a href="http://jodd.org/doc/index.html">Doc</a>   <a href="https://github.com/oblac/jodd">Github</a>
 </li>
 </ul><h3>
@@ -103,7 +112,7 @@
 <li>配置文件格式: Use Jodd-props, see:<a href="http://jodd.org/doc/props.html">Jodd Props doc</a>
 <code>Tips: Java-Properties also works</code>
 </li>
-<li>匹配支持  "/webit-script-*.props"</li>
+<li><del>匹配支持  "/webit-script-*.props</del></li>
 <li>多文件支持 "/webit-script-config1.props,/webit-script-config2.props"</li>
 <li>可选额外参数: extraSettingsMap 类型为Map, 支持props 宏</li>
 <li>默认配置: <a href="https://github.com/zqq90/webit-script/blob/master/webit-script/src/main/resources/webitl-default.props">webitl-default.props</a>
@@ -203,20 +212,20 @@ var books; //List
 
 <p><em>与Java 保持一致，顺序按优先级从高到低</em></p>
 
-<pre><code>[]  .  ()  @ (新增)
-=&gt; (新增,重定向输出)
-!  ~  ++  --  – (取负)
-*  /  %
-+  -
-&lt;&lt;  &gt;&gt;  &gt;&gt;&gt;
-&lt;  &lt;=  &gt;  &gt;=
-^
-|
-&amp;&amp;
-||
-? : (三元条件运算符)   ?: (新增: 二元操作符)
-.. (新增: 递增[减]操作符)
-=  +=  -=  *=  /=  %=  ^=  &lt;&lt;=  &gt;&gt;=  &gt;&gt;&gt;=
+<pre><code>  []  .  ()  @ (新增)
+  =&gt; (新增,重定向输出)
+  !  ~  ++  --  – (取负)
+  *  /  %
+  +  -
+  &lt;&lt;  &gt;&gt;  &gt;&gt;&gt;
+  &lt;  &lt;=  &gt;  &gt;=
+  ^
+  |
+  &amp;&amp;
+  ||
+  ? : (三元条件运算符)   ?: (新增: 二元操作符)
+  .. (新增: 递增[减]操作符)
+  =  +=  -=  *=  /=  %=  ^=  &lt;&lt;=  &gt;&gt;=  &gt;&gt;&gt;=
 </code></pre>
 
 <h3>
@@ -795,8 +804,6 @@ webitscript,   1.0.0,  1219ms,  8203/s,  92%,
 <a name="requirements%E4%BE%9D%E8%B5%96" class="anchor" href="#requirements%E4%BE%9D%E8%B5%96"><span class="octicon octicon-link"></span></a>Requirements(依赖)</h2>
 
 <ul>
-<li><code>Jodd-core</code></li>
-<li><code>Jodd-bean</code></li>
 <li><code>Jodd-props</code></li>
 </ul><h2>
 <a name="contributing%E8%B4%A1%E7%8C%AE" class="anchor" href="#contributing%E8%B4%A1%E7%8C%AE"><span class="octicon octicon-link"></span></a>Contributing(贡献)</h2>
